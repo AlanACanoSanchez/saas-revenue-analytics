@@ -21,7 +21,6 @@ Incluye limpieza de datos, construcción de un modelo dimensional (esquema estre
 - **Python** (pandas, matplotlib)
 - **PySpark** (procesamiento distribuido)
 - **Power BI** (visualización futura)
-- **SQL** (consultas exploratorias)
 - **Jupyter Notebooks**
 - **Git & GitHub**
 
@@ -45,24 +44,10 @@ Se implementó un esquema tipo **estrella** compuesto por:
 
 ### 📂 Tablas de Dimensión
 
-#### `dim_user`
-- `UserID`  
-- `Country`  
-- `RegistrationDate`  
-
-#### `dim_subscription`
-- `UserID`  
-- `Plan` (Basic, Standard, Premium)  
-- `MonthlyPrice`  
-- `DurationMonths`  
-- `StartDate`  
-
-#### `dim_churn`
-- `UserID`  
-- `ChurnDate`  
-- `ChurnReason`  
-
-> *Posible extensión futura: `dim_date` para análisis temporal más detallado.*
+- `dim_user`: Información del país y registro del usuario.
+- `dim_subscription`: Tipo de plan, duración y fecha de inicio.
+- `dim_churn`: Fecha y motivo de cancelación.
+- `dim_calendar`: Soporte para análisis temporal detallado.
 
 ---
 
@@ -73,13 +58,10 @@ saas-revenue-analytics/
 ├── data/ # Datos originales y limpios (CSV)
 ├── notebooks/ # Limpieza y análisis exploratorio
 ├── spark_jobs/ # Scripts PySpark para construir tabla de hechos
-├── sql/ # Consultas y transformaciones SQL
-├── dashboards/ # Power BI (próximamente)
-├── dags/ # Automatización futura con Airflow
+├── dashboards/ # Power BI 
 ├── README.md # Documentación principal del proyecto
 ├── requirements.txt # Librerías necesarias
 └── .gitignore
-
 
 ---
 
@@ -93,17 +75,33 @@ saas-revenue-analytics/
 6. Carga el resultado en Power BI para análisis interactivo
 
 
-## 📈 Dashboard 
+## 📈 Dashboard
 
-Dashboard interactivo construido en Power BI con indicadores clave.
+Dashboard interactivo construido con **Power BI**, orientado a brindar visibilidad clara sobre el comportamiento financiero y de cancelaciones en una empresa SaaS.
 
-![Vista general del dashboard]()
+Incluye filtros dinámicos por fecha, país y plan de suscripción. Proporciona una visión general y detallada para stakeholders y equipos de producto, marketing y finanzas.
+
+📍 Indicadores clave visualizados:
+- Ingresos mensuales (Monthly Revenue)
+- Usuarios activos vs cancelados
+- Motivos de cancelación
+- Tendencias de churn a lo largo del tiempo
+
 
 ## 🧠 Observaciones clave del análisis
 
-- 
+- **Los ingresos mensuales** han mostrado una tendencia estable, con un ligero crecimiento en la segunda mitad del período analizado.
+- **Los motivos más frecuentes de cancelación** son “Switched to competitor" y “Not useful”, lo cual indica posibles oportunidades para campañas de retención y engagement.
+- **Pico de cancelaciones en diciembre de 2022**, lo que coincide con la tasa de churn más alta del periodo analizado.
+- **El plan Premium genera la mayor parte del ingreso mensual**, seguido por el Standard y el Basic. Esto sugiere que usuarios con mayor disposición a pagar representan una fuente clave de ingresos.
+
+
+### 🖼️ Vista general del dashboard
+
+![Vista general del dashboard](dashboards/dashboard_saas-revenue-analytics.png)
+
 
 ## 👤 Autor
 
-- [Alan Arturo Cano Sanchez](https://www.linkedin.com/in/alan-arturo-cano-sanchez-511855361)
-- Egresado de Ingeniería en Datos e Inteligencia Organizacional
+- [Alan Arturo Cano Sanchez](https://www.linkedin.com/in/alan-arturo-cano-sanchez-511855361)  •[Portafolio](https://alancanoportafolio.netlify.app/) 
+

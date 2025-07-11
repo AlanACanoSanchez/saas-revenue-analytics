@@ -38,8 +38,8 @@ Su objetivo principal es ofrecer visibilidad sobre los ingresos, usuarios y canc
 
 ## 🗂️ Archivos Incluidos
 
-- `dashboard.pbix`: Archivo fuente de Power BI.
-- `dashboard.png`: Imagen del dashboard para visualización rápida.
+- `sass_revenue_analytics.pbix`: Archivo fuente de Power BI.
+- `dashboard_sass-revenue-analytics.png`: Imagen del dashboard para visualización rápida.
 - `README.md`: Descripción y documentación del dashboard.
 
 ---
@@ -49,11 +49,5 @@ Su objetivo principal es ofrecer visibilidad sobre los ingresos, usuarios y canc
 - Desde: **01/01/2022**
 - Hasta: **30/11/2023**
 
----
-
-## ✍️ Autor
-
-**Alan Arturo Cano Sánchez**  
-[LinkedIn](www.linkedin.com/in/alan-arturo-cano-sanchez-511855361) • [Portafolio](https://alancanoportafolio.netlify.app/) 
 
 ---
