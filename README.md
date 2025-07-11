@@ -53,6 +53,7 @@ Se implementó un esquema tipo **estrella** compuesto por:
 
 ## 📁 Estructura del proyecto
 
+`````
 saas-revenue-analytics/
 │
 ├── data/ # Datos originales y limpios (CSV)
@@ -62,7 +63,7 @@ saas-revenue-analytics/
 ├── README.md # Documentación principal del proyecto
 ├── requirements.txt # Librerías necesarias
 └── .gitignore
-
+`````
 ---
 
 ## ⚙️ Cómo reproducir el proyecto
