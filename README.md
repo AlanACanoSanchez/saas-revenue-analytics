@@ -98,7 +98,7 @@ Incluye filtros dinámicos por fecha, país y plan de suscripción. Proporciona 
 
 ### 🖼️ Vista general del dashboard
 
-![Vista general del dashboard](dashboards/dashboard_saas-revenue-analytics.png)
+![Vista general del dashboard](dashboards/dashboard_sass-revenue-analytics.png)
 
 
 ## 👤 Autor
